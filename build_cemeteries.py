@@ -20,7 +20,7 @@ with open(JSON, encoding="utf-8") as f:
 
 by_key = {}
 for g in graves:
-    key = (g.get("cemetery", "") + "|" + g.get("name", "")).lower()
+    key = (g.get("cemetery", "") + "|" + g.get("name", "") + "|" + g.get("relationship", "")).lower()
     by_key[key] = g
 
 with open(HTML, encoding="utf-8") as f:
@@ -41,7 +41,9 @@ def inject(card):
         if not nm:
             return li
         name = nm.group(1).strip()
-        g = by_key.get((cem + "|" + name).lower())
+        rl = re.search(r'class="b-rel">(.*?)<', li)
+        rel = rl.group(1).strip() if rl else ""
+        g = by_key.get((cem + "|" + name + "|" + rel).lower())
         if not g or not g.get("maps"):
             return li
         link = (f'<a class="gps-link" href="{g["maps"]}" target="_blank" '
