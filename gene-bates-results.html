@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gene William Bates — Running Results Tracker</title>
+<style>
+  :root{
+    --bg:#0f1419; --card:#171e26; --line:#26313d; --text:#e6edf3; --muted:#9fb0c0;
+    --accent:#ff6a3d; --good:#3fb950; --warn:#d29922; --link:#58a6ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:var(--bg);color:var(--text);line-height:1.5}
+  header{padding:32px 20px 20px;border-bottom:1px solid var(--line);text-align:center}
+  h1{margin:0 0 6px;font-size:1.9rem;letter-spacing:.3px}
+  h2{margin:32px 0 12px;font-size:1.25rem;border-left:4px solid var(--accent);padding-left:10px}
+  .sub{color:var(--muted);font-size:.95rem}
+  .wrap{max-width:920px;margin:0 auto;padding:0 16px 60px}
+  .summary{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 4px;justify-content:center}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.85rem;color:var(--muted)}
+  .chip b{color:var(--text)}
+  table{width:100%;border-collapse:collapse;margin:8px 0 6px;font-size:.92rem;background:var(--card);
+        border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#1d2731;color:var(--muted);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.5px}
+  tr:last-child td{border-bottom:none}
+  td a{color:var(--link);text-decoration:none}
+  td a:hover{text-decoration:underline}
+  .tag{display:inline-block;font-size:.72rem;padding:2px 8px;border-radius:6px;font-weight:600}
+  .verified{background:rgba(63,185,80,.15);color:var(--good);border:1px solid rgba(63,185,80,.4)}
+  .unverified{background:rgba(210,153,34,.15);color:var(--warn);border:1px solid rgba(210,153,34,.4)}
+  .note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--warn);
+        border-radius:8px;padding:12px 16px;margin:12px 0;font-size:.9rem;color:var(--muted)}
+  .note b{color:var(--text)}
+  .src{font-size:.85rem;color:var(--muted)}
+  .src li{margin:4px 0}
+  footer{text-align:center;color:var(--muted);font-size:.8rem;padding:20px;border-top:1px solid var(--line)}
+  .pb{color:var(--accent);font-weight:600}
+  .placeholder{color:var(--warn);font-style:italic}
+</style>
+</head>
+<body>
+<header>
+  <h1>Gene William Bates — Running Results</h1>
+  <div class="sub">Ultramarathon &amp; road marathon results tracker · 1980s–1990s (into early 2000s)</div>
+  <div class="summary">
+    <span class="chip">Born <b>~1951</b> <span class="sub">(M74 in 2025)</span></span>
+    <span class="chip">Hometown <b>West Jordan / Bennion, UT</b></span>
+    <span class="chip">Verified races <b>6</b></span>
+    <span class="chip">Lifetime ultra miles <b>162</b></span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <h2>Verified results</h2>
+  <table>
+    <thead>
+      <tr><th>Date</th><th>Race</th><th>Distance</th><th>Time</th><th>Place</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nov 10, 1984</td>
+        <td>Howlin' Wolf 50 Mile<br><span class="sub">Salt Lake City, UT</span></td>
+        <td>50 mi</td>
+        <td class="pb">6:20:09</td>
+        <td>1st / 6 overall &amp; M<br><span class="tag verified">COURSE RECORD</span></td>
+        <td><a href="https://ultrarunning.com/calendar/event/howlin-039-wolf-50-mile/course/9855/top-times" target="_blank" rel="noopener">ultrarunning.com</a></td>
+      </tr>
+      <tr>
+        <td>Apr 4, 1992</td>
+        <td>Collegiate Peaks Trail Run<br><span class="sub">Buena Vista, CO</span></td>
+        <td>50 mi</td>
+        <td>8:12:59</td>
+        <td>5th / 39 overall<br>5th / 35 M</td>
+        <td><a href="https://ultrarunning.com/calendar/runner/view/Gene-Bates-639259dc-132f-11ea-8855-624db84c3c72" target="_blank" rel="noopener">ultrarunning.com</a></td>
+      </tr>
+      <tr>
+        <td>Jul 1991</td>
+        <td>Deseret News / KSL Marathon<br><span class="sub">West Jordan, UT</span></td>
+        <td>Marathon (26.2)</td>
+        <td>2:52:23</td>
+        <td><b>1st</b>, M40–44</td>
+        <td><a href="https://www.deseret.com/1991/7/26/18932626/1991-deseret-news-ksl-radio-marathon/" target="_blank" rel="noopener">Deseret News</a></td>
+      </tr>
+      <tr>
+        <td>Jul 1993</td>
+        <td>Deseret News / KSL Marathon<br><span class="sub">Bennion, UT</span></td>
+        <td>Marathon (26.2)</td>
+        <td>2:57:19</td>
+        <td>2nd, M40–44</td>
+        <td><a href="https://www.deseret.com/1993/7/25/19057824/deseret-news-ksl-marathon-results/" target="_blank" rel="noopener">Deseret News</a></td>
+      </tr>
+      <tr>
+        <td>Jun 4, 1994</td>
+        <td>Shafer Butte Endurance Run<br><span class="sub">Boise, ID · 52.4 mi, 10,000' climb</span></td>
+        <td>52.4 mi</td>
+        <td>9:13:00 <span class="tag tag-cr">verified via UR mag scan</span></td>
+        <td>3rd / 18 overall</td>
+        <td><a href="https://subscriber.ultrarunning.com/archive/article/shafer-butte-endurance-run-52-4-mi" target="_blank" rel="noopener">UltraRunning Jul/Aug 1994</a></td>
+      </tr>
+      <tr>
+        <td>Feb 27, 1999</td>
+        <td>Catalina Island<br><span class="sub">Catalina, CA</span></td>
+        <td>100 km</td>
+        <td class="pb">12:33:23</td>
+        <td>36th / 80 overall<br>31st / 61 M</td>
+        <td><a href="https://ultrarunning.com/calendar/runner/view/Gene-Bates-639259dc-132f-11ea-8855-624db84c3c72" target="_blank" rel="noopener">ultrarunning.com</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="sub">Personal bests (ultrarunning.com): 50M 6:20:09 (1984) · 100K 12:33:23 (1999). Listed as M74; competitive span recorded 14y 3m 22d.</p>
+
+  <h2>Records &amp; standout marks</h2>
+  <div class="note" style="border-left-color:var(--good)">
+    <b>Howlin' Wolf 50 Mile — course record (Salt Lake City, UT).</b> Gene's winning time of <b>6:20:09</b> (Nov 10, 1984) is still ranked <b>#1 on the event's all-time Top Times list</b> — unbeaten for 40+ years (next best: Tom Fraze 6:54:28). This is the Salt Lake ultra "time record" the family recalls; note the distance is 50 <i>miles</i>, not 50K. No separate Salt Lake 50K or Salt Lake Marathon result for him appears in any open database.
+  </div>
+
+  <h2>Shafer Butte 52 Miler (Boise, ID) — VERIFIED via magazine scan</h2>
+  <div class="note" style="border-left-color:var(--good)">
+    Confirmed from the <b>UltraRunning Magazine</b> race-results article (July/August 1994 issue): Gene Bates finished <b>3rd of 18</b> at the <b>Shafer Butte Endurance Run</b> (52.4 mi, ~10,000' climb), Boise ID, on <b>June 4, 1994</b>, in <b>9:13</b>. The online databases (DUV/ultrasignup) only carried the 2000–2011 editions (which he did not run); the 1990s editions — where he actually placed — exist only in the magazine's scanned article bodies, not the web results DB. <b>This is now a verified result in the table above.</b>
+  </div>
+
+  <h2>Still searching — St. George &amp; Boston</h2>
+  <div class="note" style="border-left-color:var(--warn)">
+    <b>St. George Marathon:</b> No verified Gene W. Bates finish found. The St. George <b>Legacy Club</b> (runners with 10+ finishes) lists a "Bates, David W (2011)" but <b>no Gene Bates</b> — so he did not complete 10+ St. George marathons. He is also not among the St. George age-group course-record holders. No "Gene W. Bates" / "Gene Bates" appears in any St. George results archive or finisher list I could reach.
+    <br><br>
+    <b>Boston Marathon:</b> No verified finish found. The BAA results database (queried for both 1993 and 2026) returns <b>0 results</b> for "Gene Bates." Historical Boston results are only partially online and the BAA site is fragmented by year, so an early-80s/90s finish could exist in pre-digital or non-indexed records — but it is not confirmable from available archives.
+    <br><br>
+    <i>Note:</i> The family memory of St. George / Boston finishes may pre-date online results, or may be conflated with his verified Utah races (Deseret News/KSL Marathon, Howlin' Wolf 50). If you can recall an approximate <b>year</b> for either, I can target that specific edition's archive.
+  </div>
+
+  <h2>Family-recalled events — unverified (paper-trail only)</h2>
+  <div class="note" style="border-left-color:var(--warn)">
+    These come from family memory, not from any online results database. Listed here to track and (ideally) verify later via newspaper archives or UltraRunning Magazine back issues.
+    <ul>
+      <li><b>24-Hour Track Run for Cancer — Hillcrest High School (Midvale, UT).</b> A 24-hour charity run around the Hillcrest HS track to benefit cancer. Geographically consistent (Hillcrest HS is in Midvale, Salt Lake County — Gene's home area). <b>No online record found</b>: absent from ultrarunning.com, DUV 24-hour stats, web/newsletter searches, and a full scan of the <b>UltraRunning Magazine archive (1994–1996 issue TOCs + site search for "Hillcrest"/"Midvale"/"Utah 24")</b>. The magazine's "Race Results" section only covered established regional ultras, not local high-school charity track runs — so this event likely never appeared there. <i>Verification would require Deseret News / Salt Lake Tribune agate columns or a local Utah running-club newsletter from the era.</i></li>
+    <li><b>St. George Marathon &amp; Boston Marathon</b> — see section above; not found in available archives.</li>
+    </ul>
+  </div>
+
+  <h2>Possibly a different "Gene Bates" — not yet merged</h2>
+  <div class="note">
+    Several web hits refer to a <b>different</b> Gene Bates (likely b. ~1940): a masters runner who finished the Boston Marathon in <b>1979</b>, posted a masters time of <b>2:36:51</b> (Sept 1983) and a <b>2:22</b> 15K (1987), and later appears as an <b>archery</b> competitor (M80–84, 2023). A <b>Gene Bates b. Dec 30, 1937</b> who died Dec 31, 2025 is also a golf-course designer (Circling Raven, Palm Beach) — unrelated to running. These are kept separate until proven to be the same man.
+  </div>
+
+  <h2>Sources</h2>
+  <ul class="src">
+    <li><a href="https://ultrarunning.com/calendar/runner/view/Gene-Bates-639259dc-132f-11ea-8855-624db84c3c72" target="_blank" rel="noopener">ultrarunning.com — Gene Bates runner profile</a> (3 ultra results, PBs, lifetime stats)</li>
+    <li><a href="https://www.deseret.com/1991/7/26/18932626/1991-deseret-news-ksl-radio-marathon/" target="_blank" rel="noopener">Deseret News — 1991 Deseret News/KSL Marathon results</a></li>
+    <li><a href="https://www.deseret.com/1993/7/25/19057824/deseret-news-ksl-marathon-results/" target="_blank" rel="noopener">Deseret News — 1993 Deseret News/KSL Marathon results</a></li>
+  </ul>
+
+  <h2>Method / what the UltraRunning archive crawl did &amp; didn't prove</h2>
+  <div class="note" style="border-left-color:var(--warn)">
+    <b>Goal attempted:</b> crawl every UltraRunning Magazine issue TOC (1984–1999), open each race-result article's public <code>teaser.jpg</code> (which is NOT behind the subscriber paywall — Cloudflare only gates the HTML article body and TOC pages via curl; the image files return HTTP 200 with no auth), OCR it with tesseract, and grep for "Bates."<br><br>
+    <b>Pipeline built &amp; proven:</b> TOC → article slugs → <code>curl teaser.jpg</code> → tesseract OCR → word-boundary grep. Ran cleanly over ~1,500 articles (1984–1988 full years + targeted Boise/UT races 1991–1993). It correctly surfaces every "Bates" occurrence (e.g. Bill Bates VA, John Bates, Charles Bates Canada — all <i>not</i> Gene) and zero false positives once a word-boundary regex replaced the naive substring match.<br><br>
+    <b>Honest limitation (discovered Aug 3, 2026):</b> the <code>teaser.jpg</code> is an <b>eco-cover / cropped collage</b>, not the race-results page. Inspecting the Collegiate Peaks 50 Mile 1992 teaser (where Gene placed 5th, 8:12:59, a result we already hold from ultrarunning.com) showed three disjoint result columns plus an unrelated Cuyamaca 50K blurb — Gene's row was simply not in the crop. The one hit we did get (Shafer Butte 52.4 mi, June 1994, 3rd, "Gene Bates,UT 9:13") was lucky: that teaser happened to be the results table's top-3. <b>Therefore a "no Bates" result from this crawl does NOT prove Gene didn't run that race</b> — it only proves his name wasn't in that particular teaser crop.<br><br>
+    <b>Net result:</b> the crawl is a useful negative screen but cannot confirm presence. The 6 verified results on this page stand on their primary sources (ultrarunning.com profile, Deseret News, and the Shafer Butte magazine scan). To positively backfill more Gene results from UltraRunning Magazine, the full subscriber article bodies (or scanned PDF back-issues) are required — which sit behind the login we're not using.
+  </div>
+
+  <h2>How you can push it further (no login)</h2>
+  <ul class="src">
+    <li><b>Target a year you recall.</b> If you can narrow a race to a year (or 2–3 year window), I can pull that specific issue's TOC and OCR every race-result teaser — more likely to land a crop containing his row.</li>
+    <li><b>Newspaper agate.</b> Deseret News / Idaho Statesman / Salt Lake Tribune result columns from the era are the highest-yield paper trail for his Utah/Boise races and aren't paywalled the same way.</li>
+    <li><b>USATF / state age-group records.</b> His M40–44 Deseret News wins (1991, 1993) may be indexed in Utah USATF age-group history.</li>
+  </ul>
+
+</div>
+
+<footer>
+  Built by Hermes · last updated Aug 3, 2026 · data verified against linked primary sources
+</footer>
+</body>
+</html>
