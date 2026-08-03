@@ -59,7 +59,15 @@ body {
 .site-footer { background: var(--accent); color: #f3e9d8; padding: 24px 0; text-align: center; margin-top: 20px; }
 .site-footer a { color: #fff; }
 
+.map-section { padding: 50px 0; border-top: 1px solid var(--line); }
+.map-section h2 { font-size: 1.8rem; margin-bottom: 12px; border-bottom: 2px solid var(--accent-soft); padding-bottom: 8px; }
+.map-intro { color: var(--muted); max-width: 640px; margin-bottom: 18px; }
+#grave-map { height: 460px; width: 100%; border: 1px solid var(--line); border-radius: 8px; }
+.map-note { color: var(--muted); font-size: 0.9rem; margin-top: 10px; font-style: italic; }
+.leaflet-popup-content a { color: var(--accent); font-weight: bold; }
+
 @media (max-width: 600px) {
   .hero h1 { font-size: 2rem; }
   .b-rel { margin-left: 0; width: 100%; }
+  #grave-map { height: 340px; }
 }

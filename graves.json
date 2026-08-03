@@ -1,0 +1,106 @@
+[
+  {
+    "name": "John Bates",
+    "cemetery": "Park City Cemetery",
+    "lat": "40.6628",
+    "lng": "-111.5028",
+    "relationship": "4th great-grandfather of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+  },
+  {
+    "name": "John Bates",
+    "cemetery": "Park City Cemetery",
+    "lat": "40.6628",
+    "lng": "-111.5028",
+    "relationship": "3rd great-grandfather of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+  },
+  {
+    "name": "Hiram Daniel Bates",
+    "cemetery": "Park City Cemetery",
+    "lat": "40.6628",
+    "lng": "-111.5028",
+    "relationship": "2nd great-grandfather of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+  },
+  {
+    "name": "Bertha Kinsey Bates",
+    "cemetery": "Park City Cemetery",
+    "lat": "40.6628",
+    "lng": "-111.5028",
+    "relationship": "2nd great-grandmother of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+  },
+  {
+    "name": "William Edward Bates, Sr.",
+    "cemetery": "Park City Cemetery",
+    "lat": "40.6628",
+    "lng": "-111.5028",
+    "relationship": "great-grandfather of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+  },
+  {
+    "name": "Mary Lacy Yates Bates",
+    "cemetery": "Park City Cemetery",
+    "lat": "40.6628",
+    "lng": "-111.5028",
+    "relationship": "great-grandmother of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+  },
+  {
+    "name": "Mary Robinson Bates",
+    "cemetery": "Wanship Pioneer Cemetery",
+    "lat": "40.822",
+    "lng": "-111.40594",
+    "relationship": "5th great-grandmother of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.822,-111.40594"
+  },
+  {
+    "name": "Hannah Draycott Bates",
+    "cemetery": "Wanship Pioneer Cemetery",
+    "lat": "40.822",
+    "lng": "-111.40594",
+    "relationship": "4th great-grandmother of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.822,-111.40594"
+  },
+  {
+    "name": "Lusina Angeline Keller Bates",
+    "cemetery": "Kamas Cemetery",
+    "lat": "40.61895",
+    "lng": "-111.28081",
+    "relationship": "3rd great-grandmother of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.61895,-111.28081"
+  },
+  {
+    "name": "Kenneth Thomas Ryan",
+    "cemetery": "Midway City Cemetery",
+    "lat": "40.5028",
+    "lng": "-111.4861",
+    "relationship": "great-grandfather of Cliff (Ryan line)",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.5028,-111.4861"
+  },
+  {
+    "name": "Opal Lavon Provost Ryan",
+    "cemetery": "Midway City Cemetery",
+    "lat": "40.5028",
+    "lng": "-111.4861",
+    "relationship": "great-grandmother of Cliff (Ryan line)",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.5028,-111.4861"
+  },
+  {
+    "name": "William Edward Bates, Jr.",
+    "cemetery": "Midway City Cemetery",
+    "lat": "40.5028",
+    "lng": "-111.4861",
+    "relationship": "grandfather of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.5028,-111.4861"
+  },
+  {
+    "name": "Beverly Opal Ryan Bates",
+    "cemetery": "Midway City Cemetery",
+    "lat": "40.5028",
+    "lng": "-111.4861",
+    "relationship": "grandmother of Cliff",
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.5028,-111.4861"
+  }
+]
