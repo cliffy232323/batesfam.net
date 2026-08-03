@@ -5,7 +5,7 @@
     "lat": "40.6628",
     "lng": "-111.5028",
     "relationship": "4th great-grandfather of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+    "maps": "https://maps.app.goo.gl/V8vbheovcDWNVZXF9"
   },
   {
     "name": "John Bates",
@@ -13,7 +13,7 @@
     "lat": "40.6628",
     "lng": "-111.5028",
     "relationship": "3rd great-grandfather of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280"
   },
   {
     "name": "Hiram Daniel Bates",
@@ -21,7 +21,7 @@
     "lat": "40.6628",
     "lng": "-111.5028",
     "relationship": "2nd great-grandfather of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280"
   },
   {
     "name": "Bertha Kinsey Bates",
@@ -29,7 +29,7 @@
     "lat": "40.6628",
     "lng": "-111.5028",
     "relationship": "2nd great-grandmother of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280"
   },
   {
     "name": "William Edward Bates, Sr.",
@@ -37,7 +37,7 @@
     "lat": "40.6628",
     "lng": "-111.5028",
     "relationship": "great-grandfather of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280"
   },
   {
     "name": "Mary Lacy Yates Bates",
@@ -45,7 +45,7 @@
     "lat": "40.6628",
     "lng": "-111.5028",
     "relationship": "great-grandmother of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.6628,-111.5028"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280"
   },
   {
     "name": "Mary Robinson Bates",
@@ -53,7 +53,7 @@
     "lat": "40.822",
     "lng": "-111.40594",
     "relationship": "5th great-grandmother of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.822,-111.40594"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.82200,-111.40594"
   },
   {
     "name": "Hannah Draycott Bates",
@@ -61,7 +61,7 @@
     "lat": "40.822",
     "lng": "-111.40594",
     "relationship": "4th great-grandmother of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.822,-111.40594"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.82200,-111.40594"
   },
   {
     "name": "Lusina Angeline Keller Bates",
@@ -77,7 +77,7 @@
     "lat": "40.5028",
     "lng": "-111.4861",
     "relationship": "great-grandfather of Cliff (Ryan line)",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.5028,-111.4861"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610"
   },
   {
     "name": "Opal Lavon Provost Ryan",
@@ -85,7 +85,7 @@
     "lat": "40.5028",
     "lng": "-111.4861",
     "relationship": "great-grandmother of Cliff (Ryan line)",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.5028,-111.4861"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610"
   },
   {
     "name": "William Edward Bates, Jr.",
@@ -93,7 +93,7 @@
     "lat": "40.5028",
     "lng": "-111.4861",
     "relationship": "grandfather of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.5028,-111.4861"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610"
   },
   {
     "name": "Beverly Opal Ryan Bates",
@@ -101,6 +101,6 @@
     "lat": "40.5028",
     "lng": "-111.4861",
     "relationship": "grandmother of Cliff",
-    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.5028,-111.4861"
+    "maps": "https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610"
   }
 ]
