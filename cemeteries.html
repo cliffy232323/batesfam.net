@@ -4,16 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Family Cemeteries — The Bates Family</title>
-  <link rel="stylesheet" href="cemeteries.css" />
+  <link rel="stylesheet" href="genealogy.css" />
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;margin:0;}
+    .wrap{max-width:900px;margin:0 auto;padding:0 1.25rem;}
+    .site-header{background:var(--ink);color:#fff;border-bottom:4px solid var(--accent);}
+    .site-header .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;padding:.9rem 1.25rem;}
+    .brand{font-family:Georgia,"Times New Roman",serif;font-size:1.25rem;color:#fff;font-weight:700;letter-spacing:.3px;}
+    .brand a{color:#fff;text-decoration:none;}
+    nav{display:flex;gap:1.1rem;flex-wrap:wrap;}
+    nav a{color:#f0e9dd;font-size:.95rem;}
+    nav a:hover{color:#fff;text-decoration:underline;}
+    .hero{background:linear-gradient(180deg,#efe7d8,#f7f3ec);border-bottom:1px solid var(--line);padding:2.5rem 0 2rem;}
+    .hero h1{font-family:Georgia,serif;font-size:2.1rem;margin:0 0 .4rem;color:var(--accent);}
+    .tagline{font-size:1.05rem;color:var(--muted);max-width:60ch;margin:0;}
+    section{padding:1.2rem 0;}
+    .cemetery{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.2rem 1.4rem;margin-bottom:1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+    .cemetery h2{margin:0 0 .2rem;font-family:Georgia,serif;font-size:1.3rem;color:var(--accent);}
+    .cemetery .gps{font-size:.85rem;color:var(--muted);margin:0 0 .8rem;}
+    .cemetery .gps a{color:var(--accent-soft);}
+    .cemetery ul{list-style:none;padding:0;margin:0;}
+    .cemetery li{padding:.35rem 0;border-bottom:1px dashed var(--line);font-size:.9rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.3rem;}
+    .cemetery li:last-child{border-bottom:none;}
+    .cemetery li .name{font-weight:600;}
+    .cemetery li .dates{color:var(--muted);}
+    .cemetery li .rel{color:var(--accent-soft);font-size:.82rem;}
+    .cemetery li .fg{font-size:.78rem;margin-left:auto;}
+    .cemetery li .map-link{font-size:.78rem;white-space:nowrap;margin-left:.3rem;}
+    .cemetery li.madsen .name{color:#7a3f8a;}
+    .cemetery li.ryan .name{color:#8a6a00;}
+    .site-footer{background:var(--ink);color:#cdbfae;padding:1.2rem 0;font-size:.85rem;margin-top:2rem;text-align:center;}
+    .site-footer a{color:#f0e9dd;}
+    .count{font-size:.85rem;color:var(--muted);margin:1rem 0;}
+    @media (max-width:560px){.hero h1{font-size:1.7rem;}nav{gap:.7rem;}}
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/cemeteries.html">The Bates Family</a>
+      <span class="brand"><a href="genealogy.html">The Bates Family Tree</a></span>
       <nav>
-        <a href="/">Home</a>
-        <a href="/genealogy.html">Family Tree</a>
-        <a href="/cemeteries.html">Cemeteries</a>
+        <a href="genealogy.html">Family Tree</a>
+        <a href="cemeteries.html">Cemeteries</a>
+        <a href="tara-family.html">Tara's Family</a>
       </nav>
     </div>
   </header>
@@ -21,90 +54,215 @@
   <section class="hero">
     <div class="wrap">
       <h1>Family Cemeteries</h1>
-      <p class="tagline">
-        Where our family is buried — grouped by cemetery, with the GPS
-        location of each grounds and the family members laid to rest there.
-        Tap a cemetery to open it in your maps app and find them easily.
-      </p>
+      <p class="tagline">Where our family is buried — grouped by cemetery, with the GPS location of each grounds and the family members laid to rest there. Tap a cemetery to open it in your maps app and find them easily.</p>
     </div>
   </section>
 
-  <section class="cemeteries">
+  <section>
     <div class="wrap">
-      <article class="cemetery" id="park-city">
-        <header class="cem-head">
-          <div>
-            <h2>Park City Cemetery</h2>
-            <p class="cem-loc">Park City, Summit County, Utah</p>
-          </div>
-          <a class="map-btn" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280">Directions</a>
-        </header>
-        <p class="cem-coords">GPS: 40.66280, -111.50280 · <a target="_blank" rel="noopener" href="https://www.findagrave.com/cemetery/77378/park-city-cemetery">Find a Grave #77378</a></p>
-        <ul class="burials">
-          <li><span class="b-name">John Bates</span> <span class="b-life">1816–1887</span> <span class="b-rel">4th great-grandfather of Cliff</span><a class="gps-link" href="https://maps.app.goo.gl/V8vbheovcDWNVZXF9" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">John Bates</span> <span class="b-life">1842–1917</span> <span class="b-rel">3rd great-grandfather of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">Hiram Daniel Bates</span> <span class="b-life">1871–1940</span> <span class="b-rel">2nd great-grandfather of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">Bertha Kinsey Bates</span> <span class="b-life">1871–1948</span> <span class="b-rel">2nd great-grandmother of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">William Edward Bates, Sr.</span> <span class="b-life">1906–1955</span> <span class="b-rel">great-grandfather of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">Mary Lacy Yates Bates</span> <span class="b-life">1900–1970</span> <span class="b-rel">great-grandmother of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank" rel="noopener">GPS location ↗</a></li>
-        </ul>
-      </article>
 
-      <article class="cemetery" id="wanship-pioneer">
-        <header class="cem-head">
-          <div>
-            <h2>Wanship Pioneer Cemetery</h2>
-            <p class="cem-loc">1844 Hoytsville Rd, Wanship, Summit County, Utah</p>
-          </div>
-          <a class="map-btn" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/dir/?api=1&destination=40.82200,-111.40594">Directions</a>
-        </header>
-        <p class="cem-coords">GPS: 40.82200, -111.40594 · <a target="_blank" rel="noopener" href="https://www.findagrave.com/cemetery/109325/wanship-pioneer-cemetery">Find a Grave #109325</a></p>
-        <ul class="burials">
-          <li><span class="b-name">Mary Robinson Bates</span> <span class="b-life">1791–1891</span> <span class="b-rel">5th great-grandmother of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.82200,-111.40594" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">Hannah Draycott Bates</span> <span class="b-life">1816–1863</span> <span class="b-rel">4th great-grandmother of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.82200,-111.40594" target="_blank" rel="noopener">GPS location ↗</a></li>
-        </ul>
-      </article>
+      <p class="count">17 cemeteries · 55+ confirmed burials</p>
 
-      <article class="cemetery" id="kamas">
-        <header class="cem-head">
-          <div>
-            <h2>Kamas Cemetery</h2>
-            <p class="cem-loc">Kamas, Summit County, Utah</p>
-          </div>
-          <a class="map-btn" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/dir/?api=1&destination=40.61895,-111.28081">Directions</a>
-        </header>
-        <p class="cem-coords">GPS: 40.61895, -111.28081 · <a target="_blank" rel="noopener" href="https://www.findagrave.com/cemetery/77285/kamas-cemetery">Find a Grave #77285</a></p>
-        <ul class="burials">
-          <li><span class="b-name">Lusina Angeline Keller Bates</span> <span class="b-life">1848–1911</span> <span class="b-rel">3rd great-grandmother of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.61895,-111.28081" target="_blank" rel="noopener">GPS location ↗</a></li>
+      <!-- 1. Park City Cemetery -->
+      <div class="cemetery">
+        <h2>Park City Cemetery</h2>
+        <p class="gps">GPS: 40.66280, -111.50280 · <a href="https://www.findagrave.com/cemetery/77378/park-city-cemetery" target="_blank">Find a Grave #77378</a></p>
+        <ul>
+          <li><span class="name">John Bates</span> <span class="dates">1816–1887</span> <span class="rel">4th great-grandfather of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank">🗺️</a></li>
+          <li><span class="name">John Bates</span> <span class="dates">1842–1917</span> <span class="rel">3rd great-grandfather of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank">🗺️</a></li>
+          <li><span class="name">Hiram Daniel Bates</span> <span class="dates">1871–1940</span> <span class="rel">2nd great-grandfather of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank">🗺️</a></li>
+          <li><span class="name">Bertha Kinsey Bates</span> <span class="dates">1871–1948</span> <span class="rel">2nd great-grandmother of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank">🗺️</a></li>
+          <li><span class="name">William Edward Bates, Sr.</span> <span class="dates">1906–1955</span> <span class="rel">great-grandfather of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank">🗺️</a></li>
+          <li><span class="name">Mary Lacy Yates Bates</span> <span class="dates">1900–1970</span> <span class="rel">great-grandmother of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank">🗺️</a></li>
+          <li class="ryan"><span class="name">Thomas Adam Ryan</span> <span class="dates">1876–1942</span> <span class="rel">2nd great-grandfather of Cliff (Ryan line)</span> <a class="fg" href="https://www.findagrave.com/memorial/69481193/thomas_adam-ryan" target="_blank">#69481193</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank">🗺️</a></li>
+          <li class="ryan"><span class="name">Florence May Ryan</span> <span class="dates">1877–1954</span> <span class="rel">2nd great-grandmother of Cliff (Ryan line)</span> <a class="fg" href="https://www.findagrave.com/memorial/69481235/florence_may-ryan" target="_blank">#69481235</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.66280,-111.50280" target="_blank">🗺️</a></li>
         </ul>
-      </article>
+      </div>
 
-      <article class="cemetery" id="midway">
-        <header class="cem-head">
-          <div>
-            <h2>Midway City Cemetery</h2>
-            <p class="cem-loc">600 W 500 S, Midway, Wasatch County, Utah</p>
-          </div>
-          <a class="map-btn" target="_blank" rel="noopener"
-             href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610">Directions</a>
-        </header>
-        <p class="cem-coords">GPS: 40.50280, -111.48610 · <a target="_blank" rel="noopener" href="https://www.findagrave.com/cemetery/77332/midway-city-cemetery">Find a Grave #77332</a></p>
-        <ul class="burials">
-          <li><span class="b-name">Kenneth Thomas Ryan</span> <span class="b-life">1904–1973</span> <span class="b-rel">great-grandfather of Cliff (Ryan line)</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">Opal Lavon Provost Ryan</span> <span class="b-life">1907–1965</span> <span class="b-rel">great-grandmother of Cliff (Ryan line)</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">William Edward Bates, Jr.</span> <span class="b-life">1928–1985</span> <span class="b-rel">grandfather of Cliff</span><a class="gps-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank" rel="noopener">GPS location ↗</a></li>
-          <li><span class="b-name">Beverly Opal Ryan Bates</span> <span class="b-life">1931–2015</span> <span class="b-rel">grandmother of Cliff</span><a class="gps-link" href="https://maps.app.goo.gl/V8vbheovcDWNVZXF9" target="_blank" rel="noopener">GPS location ↗</a></li>
+      <!-- 2. Midway City Cemetery -->
+      <div class="cemetery">
+        <h2>Midway City Cemetery</h2>
+        <p class="gps">GPS: 40.50280, -111.48610 · <a href="https://www.findagrave.com/cemetery/77332/midway-city-cemetery" target="_blank">Find a Grave #77332</a></p>
+        <ul>
+          <li class="ryan"><span class="name">Kenneth Thomas Ryan</span> <span class="dates">1904–1973</span> <span class="rel">great-grandfather of Cliff (Ryan line)</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank">🗺️</a></li>
+          <li class="ryan"><span class="name">Opal Lavon Provost Ryan</span> <span class="dates">1907–1965</span> <span class="rel">great-grandmother of Cliff (Ryan line)</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank">🗺️</a></li>
+          <li class="ryan"><span class="name">Luke Elisha Provost</span> <span class="dates">1884–1951</span> <span class="rel">2nd great-grandfather of Cliff (Provost line)</span> <a class="fg" href="https://www.findagrave.com/memorial/30609063/luke_elisha-provost" target="_blank">#30609063</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank">🗺️</a></li>
+          <li class="ryan"><span class="name">Clarissa Bronson Provost</span> <span class="dates">1883–1951</span> <span class="rel">2nd great-grandmother of Cliff (Provost line)</span> <a class="fg" href="https://www.findagrave.com/memorial/30609072/clarissa-provost" target="_blank">#30609072</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank">🗺️</a></li>
+          <li class="ryan"><span class="name">Everice Ruthven Bronson</span> <span class="dates">1851–1928</span> <span class="rel">3rd great-grandfather of Cliff (Bronson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/30599830/everice_ruthven-bronson" target="_blank">#30599830</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank">🗺️</a></li>
+          <li class="ryan"><span class="name">Cynthia Van Wagoner Bronson</span> <span class="dates">1854–1930</span> <span class="rel">3rd great-grandmother of Cliff (Bronson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/30599844/cynthia-bronson" target="_blank">#30599844</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank">🗺️</a></li>
+          <li class="ryan"><span class="name">Clarissa Tappen Van Wagoner</span> <span class="dates">1824–1915</span> <span class="rel">4th great-grandmother of Cliff (Van Wagoner line)</span> <a class="fg" href="https://www.findagrave.com/memorial/11621505/clarissa-van_wagoner" target="_blank">#11621505</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank">🗺️</a></li>
+          <li><span class="name">William Edward Bates, Jr.</span> <span class="dates">1928–1985</span> <span class="rel">grandfather of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.50280,-111.48610" target="_blank">🗺️</a></li>
+          <li><span class="name">Beverly Opal Ryan Bates</span> <span class="dates">1931–2015</span> <span class="rel">grandmother of Cliff</span> <a class="map-link" href="https://maps.app.goo.gl/V8vbheovcDWNVZXF9" target="_blank">🗺️</a></li>
         </ul>
-      </article>
+      </div>
+
+      <!-- 3. Wanship Pioneer Cemetery -->
+      <div class="cemetery">
+        <h2>Wanship Pioneer Cemetery</h2>
+        <p class="gps">GPS: 40.82200, -111.40594 · <a href="https://www.findagrave.com/cemetery/109325/wanship-pioneer-cemetery" target="_blank">Find a Grave #109325</a></p>
+        <ul>
+          <li><span class="name">Mary Robinson Bates</span> <span class="dates">1791–1891</span> <span class="rel">5th great-grandmother of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.82200,-111.40594" target="_blank">🗺️</a></li>
+          <li><span class="name">Hannah Draycott Bates</span> <span class="dates">1816–1863</span> <span class="rel">4th great-grandmother of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.82200,-111.40594" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. Kamas Cemetery -->
+      <div class="cemetery">
+        <h2>Kamas Cemetery</h2>
+        <p class="gps">GPS: 40.61895, -111.28081 · <a href="https://www.findagrave.com/cemetery/77285/kamas-cemetery" target="_blank">Find a Grave #77285</a></p>
+        <ul>
+          <li><span class="name">Lusina Angeline Keller Bates</span> <span class="dates">1848–1911</span> <span class="rel">3rd great-grandmother of Cliff</span> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=40.61895,-111.28081" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. Scipio Cemetery -->
+      <div class="cemetery">
+        <h2>Scipio Cemetery</h2>
+        <p class="gps">GPS: 39.26170, -112.09580 · <a href="https://www.findagrave.com/cemetery/77428/scipio-cemetery" target="_blank">Find a Grave #77428</a></p>
+        <ul>
+          <li><span class="name">John Johansson Quarnberg</span> <span class="dates">1821–1891</span> <span class="rel">3rd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/5241884/john_johansson-quarnberg" target="_blank">#5241884</a></li>
+          <li><span class="name">Catherine Cecilia Olofsson Quarnberg</span> <span class="dates">1815–1895</span> <span class="rel">3rd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68937/catherine_cecilia-quarnberg" target="_blank">#68937</a></li>
+          <li><span class="name">Peter John Hanseen</span> <span class="dates">1830–1920</span> <span class="rel">3rd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68838/peter_john-hanseen" target="_blank">#68838</a></li>
+          <li><span class="name">Christina Elizabeth Nielson Hanseen</span> <span class="dates">1838–1897</span> <span class="rel">3rd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68859/christina_elizabeth-hanseen" target="_blank">#68859</a></li>
+          <li><span class="name">Peter Jacob Quarnberg</span> <span class="dates">1854–1918</span> <span class="rel">2nd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68905/peter_jacob-quarnberg" target="_blank">#68905</a></li>
+          <li><span class="name">Caroline Marie Hanseen Quarnberg</span> <span class="dates">1858–1936</span> <span class="rel">2nd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68887/caroline_marie-quarnberg" target="_blank">#68887</a></li>
+          <li><span class="name">Joseph Stone</span> <span class="dates">1850–1933</span> <span class="rel">2nd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68710/joseph-stone" target="_blank">#68710</a></li>
+          <li><span class="name">Adeline Elizabeth Robins Stone</span> <span class="dates">1853–1944</span> <span class="rel">2nd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68764/adeline_elizabeth-stone" target="_blank">#68764</a></li>
+          <li><span class="name">Reuben Francis Quarnberg</span> <span class="dates">1889–1965</span> <span class="rel">great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68422/reuben_francis-quarnberg" target="_blank">#68422</a></li>
+          <li><span class="name">Blonda Lenoir Stone Quarnberg</span> <span class="dates">1892–1987</span> <span class="rel">great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68475/blonda_lenoir_stone-quarnberg" target="_blank">#68475</a></li>
+          <li><span class="name">Alma Lloyd Wasden</span> <span class="dates">1911–2006</span> <span class="rel">grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/31784273/alma-lloyd-wasden" target="_blank">#31784273</a></li>
+          <li><span class="name">Nola Inez Quarnberg Wasden</span> <span class="dates">1914–2006</span> <span class="rel">grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/31784250/nola_inez-quarnberg-wasden" target="_blank">#31784250</a></li>
+          <li><span class="name">Dr. Francis Delmar "Del" Wasden</span> <span class="dates">1934–1999</span> <span class="rel">father of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/31784366/francis_delmar-wasden" target="_blank">#31784366</a></li>
+        </ul>
+      </div>
+
+      <!-- 6. Scipio Pioneer Cemetery -->
+      <div class="cemetery">
+        <h2>Scipio Pioneer Cemetery</h2>
+        <p class="gps">GPS: 39.24120, -112.09930 · <a href="https://www.findagrave.com/cemetery/109270/scipio-pioneer-cemetery" target="_blank">Find a Grave #109270</a></p>
+        <ul>
+          <li><span class="name">Thomas Fullwell Robins</span> <span class="dates">1824–1895</span> <span class="rel">3rd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/16363632/thomas_fullwell-robins" target="_blank">#16363632</a></li>
+          <li><span class="name">Ann Johnson Robins</span> <span class="dates">1822–1873</span> <span class="rel">3rd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/16363620/ann-robins" target="_blank">#16363620</a></li>
+        </ul>
+      </div>
+
+      <!-- 7. Mountain View Memorial Estates Cemetery -->
+      <div class="cemetery">
+        <h2>Mountain View Memorial Estates Cemetery</h2>
+        <p class="gps">GPS: 40.60942, -111.80395 · <a href="https://www.findagrave.com/cemetery/729904/mountain-view-memorial-estates-cemetery" target="_blank">Find a Grave #729904</a></p>
+        <ul>
+          <li><span class="name">Kenneth Eugene Candland</span> <span class="dates">1907–1999</span> <span class="rel">maternal grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/136369867/kenneth_eugene-candland" target="_blank">#136369867</a></li>
+          <li><span class="name">Adella Holman Candland</span> <span class="dates">1910–1979</span> <span class="rel">maternal grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/191052895/adella-candland" target="_blank">#191052895</a></li>
+        </ul>
+      </div>
+
+      <!-- 8. Chester Cemetery -->
+      <div class="cemetery">
+        <h2>Chester Cemetery</h2>
+        <p class="gps">GPS: 39.48240, -111.54880 · <a href="https://www.findagrave.com/cemetery/77178/chester-cemetery" target="_blank">Find a Grave #77178</a></p>
+        <ul>
+          <li><span class="name">David Harry Candland</span> <span class="dates">1858–1933</span> <span class="rel">great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/50791136/david_harry-candland" target="_blank">#50791136</a></li>
+          <li><span class="name">Phebe Maiben Candland</span> <span class="dates">1868–1951</span> <span class="rel">great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/274652556/phebe-candland" target="_blank">#274652556</a></li>
+        </ul>
+      </div>
+
+      <!-- 9. Fountain Green Cemetery -->
+      <div class="cemetery">
+        <h2>Fountain Green Cemetery</h2>
+        <p class="gps">GPS: 39.63420, -111.63030 · <a href="https://www.findagrave.com/cemetery/77232/fountain-green-cemetery" target="_blank">Find a Grave #77232</a></p>
+        <ul>
+          <li><span class="name">David Lester Holman</span> <span class="dates">1878–1963</span> <span class="rel">great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/9730199/david_lester-holman" target="_blank">#9730199</a></li>
+          <li><span class="name">Mary LaPearl Partridge Holman</span> <span class="dates">1887–1966</span> <span class="rel">great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/9730207/mary_lapearl-holman" target="_blank">#9730207</a></li>
+        </ul>
+      </div>
+
+      <!-- 10. Holden Cemetery -->
+      <div class="cemetery">
+        <h2>Holden Cemetery</h2>
+        <p class="gps">GPS: 39.09781, -112.26658 · <a href="https://www.findagrave.com/cemetery/77266/holden-cemetery" target="_blank">Find a Grave #77266</a></p>
+        <ul>
+          <li><span class="name">James Sawyer Holman</span> <span class="dates">1805–1873</span> <span class="rel">3rd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/31874342/james_sawyer-holman" target="_blank">#31874342</a></li>
+          <li><span class="name">Naomi Roxania LeBaron Holman</span> <span class="dates">1816–1881</span> <span class="rel">3rd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/31874424/naomi_roxania-holman" target="_blank">#31874424</a></li>
+        </ul>
+      </div>
+
+      <!-- 11. Salt Lake City Cemetery -->
+      <div class="cemetery">
+        <h2>Salt Lake City Cemetery</h2>
+        <p class="gps">GPS: 40.77720, -111.85800 · <a href="https://www.findagrave.com/cemetery/77424/salt-lake-city-cemetery" target="_blank">Find a Grave #77424</a></p>
+        <ul>
+          <li><span class="name">Henry Maiben</span> <span class="dates">1819–1883</span> <span class="rel">2nd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/68198795/henry-maiben" target="_blank">#68198795</a></li>
+          <li><span class="name">Flora Louise Maddison Maiben</span> <span class="dates">1835–1922</span> <span class="rel">2nd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/114679271/flora_louise-maiben" target="_blank">#114679271</a></li>
+          <li><span class="name">Sanford Holman</span> <span class="dates">1844–1938</span> <span class="rel">2nd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/47215891/sanford-holman" target="_blank">#47215891</a></li>
+          <li><span class="name">Elizabeth Hannah Allred Holman</span> <span class="dates">1843–1927</span> <span class="rel">2nd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/47216657/elizabeth_hannah-holman" target="_blank">#47216657</a></li>
+          <li class="ryan"><span class="name">John Ryan</span> <span class="dates">1846–1934</span> <span class="rel">3rd great-grandfather of Cliff (Ryan line)</span> <a class="fg" href="https://www.findagrave.com/memorial/191260387/john-ryan" target="_blank">#191260387</a></li>
+          <li><span class="name">Edwin Ruthven Bronson</span> <span class="dates">1817–1889</span> <span class="rel">4th great-grandfather of Cliff (Bronson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/54139/edwin_ruthven-bronson" target="_blank">#54139</a></li>
+          <li><span class="name">Mary Clark Bronson</span> <span class="dates">1823–1886</span> <span class="rel">4th great-grandmother of Cliff (Bronson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/54093/mary-bronson" target="_blank">#54093</a></li>
+        </ul>
+      </div>
+
+      <!-- 12. Emery City Cemetery -->
+      <div class="cemetery">
+        <h2>Emery City Cemetery</h2>
+        <p class="gps">GPS: 38.93110, -111.25470 · <a href="https://www.findagrave.com/cemetery/77213/emery-cemetery" target="_blank">Find a Grave #77213</a></p>
+        <ul>
+          <li><span class="name">Wiley Payne Allred Sr.</span> <span class="dates">1818–1912</span> <span class="rel">3rd great-grandfather of Tara (Allred line)</span> <a class="fg" href="https://www.findagrave.com/memorial/17060893/wiley_payne-allred" target="_blank">#17060893</a></li>
+        </ul>
+      </div>
+
+      <!-- 13. Mona Cemetery -->
+      <div class="cemetery">
+        <h2>Mona Cemetery</h2>
+        <p class="gps">GPS: 39.80750, -111.83890 · <a href="https://www.findagrave.com/cemetery/77340/mona-cemetery" target="_blank">Find a Grave #77340</a></p>
+        <ul>
+          <li><span class="name">William Charles Partridge</span> <span class="dates">1830–1916</span> <span class="rel">3rd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/48352281/william_charles-partridge" target="_blank">#48352281</a></li>
+          <li><span class="name">Mary Smith Partridge</span> <span class="dates">1829–1894</span> <span class="rel">3rd great-grandmother of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/48352285/mary-partridge" target="_blank">#48352285</a></li>
+        </ul>
+      </div>
+
+      <!-- 14. Duchesne City Cemetery -->
+      <div class="cemetery">
+        <h2>Duchesne City Cemetery</h2>
+        <p class="gps">GPS: 40.15530, -110.40876 · <a href="https://www.findagrave.com/cemetery/77202/duchesne-city-cemetery" target="_blank">Find a Grave #77202</a></p>
+        <ul>
+          <li><span class="name">John Harvey Partridge</span> <span class="dates">1863–1932</span> <span class="rel">2nd great-grandfather of Tara</span> <a class="fg" href="https://www.findagrave.com/memorial/70364128/john_harvey-partridge" target="_blank">#70364128</a></li>
+        </ul>
+      </div>
+
+      <!-- 15. Elysian Burial Gardens -->
+      <div class="cemetery">
+        <h2>Elysian Burial Gardens</h2>
+        <p class="gps">GPS: 40.67145, -111.85825 · <a href="https://www.findagrave.com/cemetery/77212/elysian-burial-gardens" target="_blank">Find a Grave #77212</a></p>
+        <ul>
+          <li class="madsen"><span class="name">Shirley Johnson Madsen</span> <span class="dates">1935–2025</span> <span class="rel">grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/288475683/shirley-madsen" target="_blank">#288475683</a></li>
+        </ul>
+      </div>
+
+      <!-- 16. Redwood Memorial Cemetery -->
+      <div class="cemetery">
+        <h2>Redwood Memorial Cemetery</h2>
+        <p class="gps">GPS: 40.66280, -111.50280 · <a href="https://www.findagrave.com/cemetery/77405/redwood-memorial-cemetery" target="_blank">Find a Grave #77405</a> (West Jordan, Salt Lake County, UT)</p>
+        <ul>
+          <li class="madsen"><span class="name">Magnus Paul Madsen</span> <span class="dates">1889–1975</span> <span class="rel">great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/19857207/magnus_paul-madsen" target="_blank">#19857207</a></li>
+          <li class="madsen"><span class="name">Clara Vivian Bench Madsen</span> <span class="dates">1894–1972</span> <span class="rel">great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/19857217/clara_vivian-madsen" target="_blank">#19857217</a></li>
+        </ul>
+      </div>
+
+      <!-- 17. Provo City Cemetery -->
+      <div class="cemetery">
+        <h2>Provo City Cemetery</h2>
+        <p class="gps">GPS: 40.22500, -111.64440 · <a href="https://www.findagrave.com/cemetery/77401/provo-city-cemetery" target="_blank">Find a Grave #77401</a></p>
+        <ul>
+          <li class="ryan"><span class="name">John Halmagh Van Wagoner</span> <span class="dates">1811–1888</span> <span class="rel">4th great-grandfather of Cliff (Van Wagoner line)</span> <a class="fg" href="https://www.findagrave.com/memorial/12580463/john_halmagh-van_wagoner" target="_blank">#12580463</a></li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>© 2026 The Bates Family · <a href="/">batesfam.net</a></p>
+      <p>© 2026 The Bates Family · <a href="genealogy.html">batesfam.net</a></p>
     </div>
   </footer>
 </body>
