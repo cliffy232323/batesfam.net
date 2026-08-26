@@ -3,16 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CliffsNotes — by Cliff Bates</title>
+  <title>Cliff Bates — Executive Vice President, Enterprise Infrastructure, Risk &amp; Security</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .profile { max-width: 760px; margin: 0 auto; padding: 70px 24px 40px; text-align: center; }
+    .profile h1 { font-size: 2.8rem; letter-spacing: -0.02em; margin-bottom: 10px; }
+    .profile .role { color: var(--muted); font-size: 1.25rem; margin-bottom: 20px; }
+    .profile .contact { color: var(--muted); font-size: 0.98rem; margin-bottom: 34px; }
+    .profile .contact a { color: var(--accent); text-decoration: none; }
+    .profile .contact a:hover { color: var(--accent-hover); }
+    .actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+    .btn {
+      display: inline-block; background: var(--accent); color: #0f1419;
+      font-weight: 700; padding: 13px 26px; border-radius: 8px;
+      text-decoration: none; font-size: 1rem;
+    }
+    .btn.ghost { background: transparent; color: var(--text); border: 1px solid #3a4655; }
+    .btn:hover { background: var(--accent-hover); }
+    .btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+    .summary { color: var(--muted); font-size: 1.05rem; line-height: 1.75; max-width: 700px; margin: 0 auto 56px; }
+    .summary strong { color: var(--text); }
+    .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; max-width: 760px; margin: 0 auto 70px; }
+    .highlight { background: var(--surface); border: 1px solid #232c38; border-radius: 10px; padding: 22px; }
+    .highlight .num { color: var(--accent); font-size: 1.6rem; font-weight: 700; }
+    .highlight .label { color: var(--text); font-size: 0.95rem; margin-top: 6px; }
+    .more { max-width: 760px; margin: 0 auto 30px; }
+    .more h2 { font-size: 1.3rem; margin-bottom: 18px; color: var(--muted); }
+    .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .link-card {
+      background: var(--surface); border: 1px solid #232c38; border-radius: 10px;
+      padding: 20px; text-decoration: none; color: var(--text); transition: border-color .15s, transform .15s;
+    }
+    .link-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .link-card .t { font-weight: 700; margin-bottom: 4px; }
+    .link-card .d { color: var(--muted); font-size: 0.88rem; }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/">CliffsNotes</a>
+      <a class="brand" href="/">Cliff Bates</a>
       <nav>
-        <a href="#latest">Latest</a>
-        <a href="#about">About</a>
+        <a href="/resume.html">Résumé</a>
         <a href="/genealogy.html">Genealogy</a>
         <a href="/tara-family.html">Tara's Family</a>
         <a href="/cemeteries.html">Cemeteries</a>
@@ -22,67 +54,69 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrap">
-      <h1>CliffsNotes</h1>
-      <p class="tagline">
-        Notes from our travels — stories from the road with my wife Tara.
-      </p>
-      <a class="cta" href="https://cliffbates.substack.com" target="_blank" rel="noopener">
-        Read the full Substack →
+  <div class="profile">
+    <h1>Cliff Bates</h1>
+    <p class="role">Executive Vice President — Enterprise Infrastructure, Risk &amp; Security</p>
+    <p class="contact">
+      Park City, UT &nbsp;|&nbsp; <a href="mailto:resume@batesfam.net">resume@batesfam.net</a>
+      &nbsp;|&nbsp; <a href="https://linkedin.com/in/clbates" target="_blank" rel="noopener">linkedin.com/in/clbates</a>
+    </p>
+    <div class="actions">
+      <a class="btn" href="/resume/Cliff_Bates_Resume.pdf" download>Download Résumé (PDF)</a>
+      <a class="btn ghost" href="/resume.html">View Résumé</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="summary">
+      <strong>Executive IT leader</strong> with 25+ years in financial-services technology at a top-50
+      U.S. bank — including 20+ years leading enterprise transformation, infrastructure resiliency, and
+      cybersecurity. Directs <strong>$100M+ budgets</strong> and leads global teams of <strong>250+</strong>.
+      Trusted advisor to C-suite and board-level executives, focused on aligning IT strategy with business
+      outcomes.
+    </p>
+  </div>
+
+  <div class="highlights">
+    <div class="highlight"><div class="num">$100M+</div><div class="label">Budget responsibility</div></div>
+    <div class="highlight"><div class="num">250+</div><div class="label">Global team leadership</div></div>
+    <div class="highlight"><div class="num">25+ yrs</div><div class="label">Financial-services technology</div></div>
+    <div class="highlight"><div class="num">Top-50</div><div class="label">U.S. bank background</div></div>
+  </div>
+
+  <div class="wrap more">
+    <h2>More about me</h2>
+    <div class="links">
+      <a class="link-card" href="/resume.html">
+        <div class="t">Résumé &amp; Experience</div>
+        <div class="d">Full professional history, highlights, and downloadable PDF.</div>
+      </a>
+      <a class="link-card" href="https://cliffbates.substack.com" target="_blank" rel="noopener">
+        <div class="t">CliffsNotes — Substack</div>
+        <div class="d">Travel stories and essays from the road with my wife Tara.</div>
+      </a>
+      <a class="link-card" href="/genealogy.html">
+        <div class="t">Family Genealogy</div>
+        <div class="d">Bates &amp; Ryan family history and memorials.</div>
+      </a>
+      <a class="link-card" href="/tara-family.html">
+        <div class="t">Tara's Family</div>
+        <div class="d">Family pages from Tara's side.</div>
+      </a>
+      <a class="link-card" href="/cemeteries.html">
+        <div class="t">Cemeteries</div>
+        <div class="d">GPS locations for family graves.</div>
+      </a>
+      <a class="link-card" href="/gene-bates-results.html">
+        <div class="t">Gene's Runs</div>
+        <div class="d">Race results and running history.</div>
       </a>
     </div>
-  </section>
-
-  <section id="latest" class="latest">
-    <div class="wrap">
-      <h2>Latest from the road</h2>
-      <div class="cards">
-        <article class="card">
-          <a href="https://cliffbates.substack.com/p/chile" target="_blank" rel="noopener">
-            <h3>Chile!</h3>
-          </a>
-          <p class="meta">Mar 11, 2025</p>
-          <p>From amazing mountains to lackluster southern cities.</p>
-          <a class="read" href="https://cliffbates.substack.com/p/chile" target="_blank" rel="noopener">Read →</a>
-        </article>
-
-        <article class="card">
-          <a href="https://cliffbates.substack.com/p/argentina" target="_blank" rel="noopener">
-            <h3>Argentina</h3>
-          </a>
-          <p class="meta">Feb 27, 2025</p>
-          <p>A brief trip into Argentina to explore northern Patagonia and more.</p>
-          <a class="read" href="https://cliffbates.substack.com/p/argentina" target="_blank" rel="noopener">Read →</a>
-        </article>
-
-        <article class="card">
-          <a href="https://cliffbates.substack.com/p/colombia" target="_blank" rel="noopener">
-            <h3>Colombia</h3>
-          </a>
-          <p class="meta">Feb 15, 2025</p>
-          <p>Beyond the warnings — three weeks in this beautiful country.</p>
-          <a class="read" href="https://cliffbates.substack.com/p/colombia" target="_blank" rel="noopener">Read →</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="wrap">
-      <h2>About</h2>
-      <p>
-        I'm Cliff. My wife Tara and I set out to travel the world — and I started
-        writing about it. CliffsNotes is where I share the journey: the mountains,
-        the cities, the misadventures, and what it's like to build a life around
-        curiosity instead of calendars.
-      </p>
-    </div>
-  </section>
+  </div>
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>© 2026 Cliff Bates · <a href="https://cliffbates.substack.com" target="_blank" rel="noopener">cliffbates.substack.com</a></p>
+      <p>© 2026 Cliff Bates · <a href="mailto:resume@batesfam.net">resume@batesfam.net</a> · <a href="https://linkedin.com/in/clbates" target="_blank" rel="noopener">LinkedIn</a></p>
     </div>
   </footer>
 </body>
