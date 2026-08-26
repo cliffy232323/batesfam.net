@@ -6,19 +6,38 @@
   <title>Cliff Bates — Résumé</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .resume-page { max-width: 760px; margin: 0 auto; padding: 60px 24px 80px; }
-    .resume-page h1 { font-size: 2.4rem; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .resume-page .role { color: var(--muted); font-size: 1.15rem; margin-bottom: 28px; }
-    .resume-contact { color: var(--muted); font-size: 0.95rem; margin-bottom: 40px; }
-    .resume-contact a { color: var(--accent); text-decoration: none; }
-    .resume-contact a:hover { color: var(--accent-hover); }
-    .download-btn {
+    .resume-page { max-width: 820px; margin: 0 auto; padding: 48px 24px 80px; }
+    .resume-head { text-align: center; padding-bottom: 28px; border-bottom: 1px solid #232c38; margin-bottom: 34px; }
+    .resume-head h1 { font-size: 2.4rem; letter-spacing: -0.02em; margin-bottom: 6px; }
+    .resume-head .role { color: var(--accent); font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; }
+    .resume-head .contact { color: var(--muted); font-size: 0.92rem; }
+    .resume-head .contact a { color: var(--accent); text-decoration: none; }
+    .resume-head .contact a:hover { color: var(--accent-hover); }
+    .resume-actions { display: flex; gap: 12px; justify-content: center; margin-top: 22px; flex-wrap: wrap; }
+    .btn {
       display: inline-block; background: var(--accent); color: #0f1419;
-      font-weight: 700; padding: 14px 28px; border-radius: 8px;
-      text-decoration: none; font-size: 1.05rem; margin-bottom: 48px;
+      font-weight: 700; padding: 11px 22px; border-radius: 8px;
+      text-decoration: none; font-size: 0.95rem;
     }
-    .download-btn:hover { background: var(--accent-hover); }
-    .resume-note { color: var(--muted); font-size: 0.85rem; margin-top: 40px; line-height: 1.7; }
+    .btn.ghost { background: transparent; color: var(--text); border: 1px solid #3a4655; }
+    .btn:hover { background: var(--accent-hover); }
+    .btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+    h2 { font-size: 1.25rem; color: var(--accent); margin: 34px 0 16px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .summary { color: var(--muted); font-size: 1.02rem; line-height: 1.7; }
+    .comps { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 640px) { .comps { grid-template-columns: 1fr; } }
+    .comp { background: var(--surface); border: 1px solid #232c38; border-radius: 10px; padding: 18px; }
+    .comp h3 { font-size: 0.95rem; color: var(--text); margin-bottom: 8px; }
+    .comp p { color: var(--muted); font-size: 0.88rem; line-height: 1.6; }
+    .job { margin-bottom: 24px; }
+    .job .jt { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+    .job h3 { font-size: 1.05rem; color: var(--text); }
+    .job .dates { color: var(--accent); font-size: 0.85rem; white-space: nowrap; }
+    .job .org { color: var(--muted); font-size: 0.92rem; margin-bottom: 8px; }
+    .job ul { margin: 0; padding-left: 20px; }
+    .job li { color: var(--muted); font-size: 0.92rem; line-height: 1.65; margin-bottom: 6px; }
+    .refs { color: var(--muted); font-size: 0.95rem; line-height: 1.8; }
+    .edu { color: var(--muted); font-size: 0.95rem; line-height: 1.8; }
   </style>
 </head>
 <body>
@@ -34,15 +53,117 @@
   </header>
 
   <div class="resume-page">
-    <h1>Cliff Bates</h1>
-    <p class="role">Executive Vice President — Enterprise Infrastructure, Risk &amp; Security</p>
-    <p class="resume-contact">
-      Park City, UT &nbsp;|&nbsp; <a href="mailto:hello@batesfam.net">hello@batesfam.net</a>
-      &nbsp;|&nbsp; <a href="https://linkedin.com/in/clbates" target="_blank" rel="noopener">linkedin.com/in/clbates</a>
+    <div class="resume-head">
+      <h1>Cliff Bates</h1>
+      <p class="role">Executive Vice President — Enterprise Infrastructure, Risk &amp; Security</p>
+      <p class="contact">
+        Park City, UT &nbsp;|&nbsp; <a href="mailto:hello@batesfam.net">hello@batesfam.net</a>
+        &nbsp;|&nbsp; <a href="https://linkedin.com/in/clbates" target="_blank" rel="noopener">linkedin.com/in/clbates</a>
+      </p>
+      <div class="resume-actions">
+        <a class="btn" href="/resume/Cliff_Bates_Resume.pdf" download>Download Résumé (PDF)</a>
+      </div>
+    </div>
+
+    <h2>Executive Summary</h2>
+    <p class="summary">
+      Strategic, execution-driven Executive Vice President with 25+ years of IT leadership in top-50 U.S.
+      banking. Proven track record directing enterprise budgets, leading global teams of 250+, and driving
+      core banking modernizations, active/active data center resilience, and enterprise-wide cyber
+      vulnerability remediation. Trusted advisor to C-suite and board-level executives, specializing in
+      aligning IT strategy with operational agility, risk mitigation, and regulatory compliance.
     </p>
-    <a class="download-btn" href="/resume/Cliff_Bates_Resume.pdf" download>Download Résumé (PDF)</a>
-    <p class="resume-note">
-      Public résumé — contact via the links above. Updated August 2026.
+
+    <h2>Core Competencies</h2>
+    <div class="comps">
+      <div class="comp">
+        <h3>Strategic Leadership</h3>
+        <p>Enterprise IT Strategy &amp; Vision, Board &amp; Executive Alignment, Global &amp; Offshore Talent Leadership, AI &amp; Emerging Technology Governance</p>
+      </div>
+      <div class="comp">
+        <h3>Operations &amp; Financials</h3>
+        <p>Enterprise P&amp;L / Budget Management, Strategic Vendor &amp; Contract Management (IBM, Microsoft, ServiceNow, TCS, Splunk, Oracle), Active/Active Multi-Site Data Center Resilience, High-Availability Infrastructure</p>
+      </div>
+      <div class="comp">
+        <h3>Risk &amp; Security</h3>
+        <p>Cyber Vulnerability Remediation, Information Security &amp; Cyber Defense, Regulatory Compliance &amp; Examination Defense (FDIC/FFIEC/GLBA), DR &amp; Business Continuity</p>
+      </div>
+      <div class="comp">
+        <h3>Modernization &amp; Governance</h3>
+        <p>Core Systems Transformation (TCS BaNCS), Enterprise Architecture, Risk Management &amp; Audit Governance, Crisis &amp; Incident Management</p>
+      </div>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="jt"><h3>Executive Career Transition &amp; Professional Development</h3><span class="dates">Mar 2025 – Present</span></div>
+      <p class="org"></p>
+      <ul><li>Undertook an intentional sabbatical focused on strategic executive networking, global travel, and staying abreast of emerging enterprise technology trends prior to market re-entry.</li></ul>
+    </div>
+
+    <div class="job">
+      <div class="jt"><h3>Executive Vice President, IT Director</h3><span class="dates">Dec 2017 – Mar 2025</span></div>
+      <p class="org">Zions Bancorporation — Salt Lake City, UT</p>
+      <ul>
+        <li>Enterprise Operations: Directed enterprise IT infrastructure operations, technology governance, and data center strategy supporting 450+ financial locations and 20,000+ technology components.</li>
+        <li>Financial Stewardship: Managed an annual operating budget exceeding $100M, optimizing cost structures and vendor licensing efficiency while maintaining continuous high availability.</li>
+        <li>Data Center Resilience: Architectural leader behind transforming Zions' infrastructure from active/passive to an active/active multi-data center model, achieving non-disruptive uptime.</li>
+        <li>Cyber Vulnerability Remediation: Spearheaded enterprise-wide patching and threat mitigation across 20,000+ components in close partnership with corporate cybersecurity teams.</li>
+        <li>Audit &amp; Governance: Deployed a risk management governance framework across 200+ staff, producing measurable audit rating improvements across enterprise environments.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="jt"><h3>Senior Vice President, Core Technical Readiness</h3><span class="dates">Mar 2013 – Dec 2017</span></div>
+      <p class="org">Zions Bancorporation — Salt Lake City, UT</p>
+      <ul>
+        <li>Core Banking Modernization: Partnered with the Enterprise CIO to execute Releases 1 &amp; 2 of the multi-year FutureCore TCS BaNCS deployment.</li>
+        <li>Vendor &amp; Offshore Delivery: Directed technical architecture, interface development, non-functional testing, and integration with offshore teams (TCS).</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="jt"><h3>Vice President, IT Enterprise Communications Manager Sr.</h3><span class="dates">2011 – Mar 2013</span></div>
+      <p class="org">Zions Bancorporation — Salt Lake City, UT</p>
+      <ul><li>Managed teams overseeing enterprise communications infrastructure, including IVR, VoIP/telephony systems, networking, storage, and backup frameworks.</li></ul>
+    </div>
+
+    <div class="job">
+      <div class="jt"><h3>Vice President, IT Manager</h3><span class="dates">2004 – 2011</span></div>
+      <p class="org">Zions Bancorporation — Salt Lake City, UT</p>
+      <ul>
+        <li>Led Data Transmission Services, Storage Infrastructure, and Distributed Enterprise Services across the corporation.</li>
+        <li>Turned around teams flagged for material improvement, managing file transmission, data replication, authentication, email, and DR testing.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="jt"><h3>IT Systems Engineer</h3><span class="dates">2000 – 2004</span></div>
+      <p class="org">Zions Bancorporation — Salt Lake City, UT</p>
+      <ul><li>Supported data-center server environments, remote offices, and technical integration during the Zions &amp; First Security merger.</li></ul>
+    </div>
+
+    <div class="job">
+      <div class="jt"><h3>IT Consultant</h3><span class="dates">1998 – 2000</span></div>
+      <p class="org">Uinta Business Systems — Contractor to Zions Bancorporation and other Utah-based companies</p>
+      <ul><li>Provided systems administration, network design, and security consulting for Zions Bancorporation and regional clients.</li></ul>
+    </div>
+
+    <h2>Education &amp; Community Leadership</h2>
+    <p class="edu">
+      Bachelor of Science: Business Management — University of Phoenix, Salt Lake City, UT (2009)
+    </p>
+    <p class="edu" style="margin-top:10px">
+      Co-Chair, Zions Bank Paint-a-Thon &nbsp;·&nbsp; Member, Zions Peer Bank Forum (MAAG) &nbsp;·&nbsp; Leadership Involvement, ZTC Building Committee
+    </p>
+
+    <h2>References</h2>
+    <p class="refs">
+      Jennifer Smith — Former COO/CIO, Zions Bancorporation<br />
+      Margaret Mayer — Current CIO, Zions Bancorporation<br />
+      Chad Avery — CTO, Zions Bancorporation<br />
+      Jeff Newman — IT Director, Zions Bancorporation
     </p>
   </div>
 </body>
