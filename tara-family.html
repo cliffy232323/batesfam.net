@@ -37,12 +37,13 @@
       <h2>Family Tree</h2>
 
       <div class="legend">
-        <h4>Lineage Colors</h4>
-        <span><i class="swatch-bates"></i> Wasden / Quarnberg (paternal)</span>
-        <span><i class="swatch-ryan"></i> Ryan / Provost / Bronson</span>
-        <span><i class="swatch-maternal"></i> Maternal (Candland / Holman / Maiben)</span>
-        <span><i class="swatch-living"></i> Living</span>
-        <span><i class="swatch-deceased"></i> Deceased / Infant</span>
+        <h4>Lineage Colors <span class="hint">— click a line to show just it</span></h4>
+        <span data-line="bates"><i class="swatch-bates"></i> Wasden / Quarnberg (paternal)</span>
+        <span data-line="ryan"><i class="swatch-ryan"></i> Ryan / Provost / Bronson</span>
+        <span data-line="maternal"><i class="swatch-maternal"></i> Maternal (Candland / Holman / Maiben)</span>
+        <span data-line="living"><i class="swatch-living"></i> Living</span>
+        <span data-line="deceased"><i class="swatch-deceased"></i> Deceased / Infant</span>
+        <span class="legend-reset" title="Show all lines">⟲ Reset</span>
       </div>
 
       <div class="gen">
@@ -754,5 +755,66 @@
       <p>© 2026 The Bates Family · <a href="genealogy.html">batesfam.net</a></p>
     </div>
   </footer>
+  <script>
+  (function(){
+    var LINE = {
+      bates:    function(n){ return !n.classList.contains('ryan') && !n.classList.contains('maternal') && !n.classList.contains('child') && !n.classList.contains('deceased'); },
+      ryan:     function(n){ return n.classList.contains('ryan'); },
+      maternal: function(n){ return n.classList.contains('maternal'); },
+      living:   function(n){ return n.classList.contains('child'); },
+      deceased: function(n){ return n.classList.contains('deceased'); }
+    };
+    var tree = document.getElementById('tree');
+    if(!tree) return;
+    var gens = Array.prototype.slice.call(tree.querySelectorAll('.gen'));
+    var chips = Array.prototype.slice.call(document.querySelectorAll('.legend span[data-line]'));
+    var active = null;
+
+    function genIndex(g){
+      var m = (g.querySelector('h3')||{}).textContent || '';
+      var mm = m.match(/Generation\s*(-?\d+)/i);
+      return mm ? parseInt(mm[1],10) : NaN;
+    }
+    function pinned(g){
+      var i = genIndex(g);
+      return i === 0 || i === 1;
+    }
+
+    function apply(){
+      var fn = active ? LINE[active] : null;
+      gens.forEach(function(g){
+        var couples = Array.prototype.slice.call(g.querySelectorAll('.couple'));
+        var anyVisible = false;
+        couples.forEach(function(c){
+          var nodes = Array.prototype.slice.call(c.querySelectorAll('.node'));
+          var match = fn ? nodes.some(fn) : true;
+          var show = fn ? (pinned(g) || match) : true;
+          c.classList.toggle('is-hidden', !show);
+          if(show) anyVisible = true;
+        });
+        g.classList.toggle('is-hidden', !anyVisible);
+      });
+      chips.forEach(function(ch){
+        ch.classList.toggle('active', ch.dataset.line === active);
+      });
+      if(resetBtn) resetBtn.classList.toggle('has-active', !!active);
+    }
+
+    var resetBtn = document.querySelector('.legend-reset');
+    if(resetBtn){
+      resetBtn.addEventListener('click', function(){
+        active = null;
+        apply();
+      });
+    }
+
+    chips.forEach(function(ch){
+      ch.addEventListener('click', function(){
+        active = (active === ch.dataset.line) ? null : ch.dataset.line;
+        apply();
+      });
+    });
+  })();
+  </script>
 </body>
 </html>

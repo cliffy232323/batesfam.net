@@ -76,6 +76,12 @@ h2{font-family:Georgia,serif;font-size:1.6rem;color:var(--accent);margin:0 0 1.2
   display:inline-block;width:14px;height:14px;border-radius:3px;
   border:1px solid rgba(0,0,0,.15);
 }
+.legend span{cursor:pointer;border-radius:6px;padding:2px 8px;margin:-2px -8px;transition:background .15s,box-shadow .15s;}
+.legend span:hover{background:#fff;}
+.legend span.active{background:#fff;box-shadow:0 0 0 2px var(--accent-soft);}
+.legend span .hint{opacity:.55;font-size:.72rem;margin-left:.35rem;}
+.legend .legend-reset{color:var(--accent);font-weight:700;border:1px dashed var(--line);border-radius:6px;padding:2px 10px;margin:-2px 0;}
+.legend .legend-reset.has-active{background:#fff;box-shadow:0 0 0 2px var(--accent-soft);}
 .legend .swatch-bates{background:#7a2e1d;}
 .legend .swatch-ryan{background:#b8860b;}
 .legend .swatch-maternal{background:#1a7a8a;}
@@ -105,6 +111,10 @@ h2{font-family:Georgia,serif;font-size:1.6rem;color:var(--accent);margin:0 0 1.2
 
 .site-footer{background:var(--ink);color:#cdbfae;padding:1.2rem 0;font-size:.85rem;}
 .site-footer a{color:#f0e9dd;}
+
+/* Tree line filter */
+.gen.is-hidden{display:none;}
+.couple.is-hidden{display:none;}
 
 @media (max-width:560px){
   .hero h1{font-size:1.7rem;}
