@@ -10,7 +10,7 @@ but **no birthplace**, and several show only a country/region with no specific t
 
 ### Research targets
 
-**genealogy.html (Bates/Ryan/Madsen tree)**
+**bates-family-tree.html (Bates/Ryan/Madsen tree)**
 - [x] Leman Bronson → Middlebury, New Haven, CT (WikiTree)
 - [x] Halmagh John Van Wagoner → Bergen Co., NJ (Find a Grave)
 - [x] Edwin Ruthven Bronson → Mentor, Lake, OH (WikiTree)
@@ -18,7 +18,7 @@ but **no birthplace**, and several show only a country/region with no specific t
 - [ ] Peter Henry Madsen — has "Denmark" but no specific town (confirmed Danish immigrant)
 - [ ] William Enos Bench — has "Axtell, UT" but verify birth vs. residence
 
-**tara-family.html (Wasden/Quarnberg/Candland tree)**
+**wasden-family-tree.html (Wasden/Quarnberg/Candland tree)**
 - [x] Henry Maiben → Brighton, East Sussex, England (Find a Grave)
 - [x] Sanford Holman → Nauvoo, Hancock, IL (Find a Grave)
 - [x] David Lester Holman → Fountain Green, UT (FamilySearch + tara line 656 note)
