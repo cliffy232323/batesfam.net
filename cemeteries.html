@@ -36,6 +36,16 @@
     .site-footer{background:var(--ink);color:#cdbfae;padding:1.2rem 0;font-size:.85rem;margin-top:2rem;text-align:center;}
     .site-footer a{color:#f0e9dd;}
     .count{font-size:.85rem;color:var(--muted);margin:1rem 0;}
+
+    /* State filter */
+    .state-bar{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.7rem 1rem;margin:0 0 1.5rem;font-size:.85rem;}
+    .state-bar h4{margin:0;font-family:Georgia,serif;font-size:.95rem;color:var(--accent);}
+    .state-bar span{cursor:pointer;border-radius:6px;padding:2px 10px;border:1px dashed var(--line);transition:background .15s,box-shadow .15s;}
+    .state-bar span:hover{background:#fff;}
+    .state-bar span.active{background:#fff;box-shadow:0 0 0 2px var(--accent-soft);}
+    .state-bar .state-reset{color:var(--accent);font-weight:700;}
+    .state-bar .state-reset.has-active{background:#fff;box-shadow:0 0 0 2px var(--accent-soft);}
+    .cemetery.is-hidden{display:none;}
     @media (max-width:560px){.hero h1{font-size:1.7rem;}nav{gap:.7rem;}}
   </style>
 
@@ -43,11 +53,11 @@
 <body>
   <header class="site-header">
     <div class="wrap">
-      <span class="brand"><a href="genealogy.html">The Bates Family Tree</a></span>
+      <span class="brand"><a href="genealogy.html">Bates Family Tree</a></span>
       <nav>
-        <a href="genealogy.html">Family Tree</a>
+        <a href="genealogy.html">Bates Tree</a>
         <a href="cemeteries.html">Cemeteries</a>
-        <a href="tara-family.html">Tara's Family</a>
+        <a href="tara-family.html">Wasden Tree</a>
       </nav>
     </div>
   </header>
@@ -62,10 +72,21 @@
   <section>
     <div class="wrap">
 
-      <p class="count">17 cemeteries · 55+ confirmed burials</p>
+      <p class="count">32 cemeteries · 80+ confirmed burials</p>
+
+      <div class="state-bar">
+        <h4>Filter by State</h4>
+        <span data-state="UT">Utah</span>
+        <span data-state="ID">Idaho</span>
+        <span data-state="CA">California</span>
+        <span data-state="IL">Illinois</span>
+        <span data-state="MO">Missouri</span>
+        <span class="state-reset" title="Show all states">⟲ All</span>
+      </div>
+
 
       <!-- 1. Park City Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Park City Cemetery</h2>
         <p class="gps">GPS: 40.66280, -111.50280 · <a href="https://www.findagrave.com/cemetery/77378/park-city-cemetery" target="_blank">Find a Grave #77378</a></p>
         <ul>
@@ -81,7 +102,7 @@
       </div>
 
       <!-- 2. Midway City Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Midway City Cemetery</h2>
         <p class="gps">GPS: 40.50280, -111.48610 · <a href="https://www.findagrave.com/cemetery/77332/midway-city-cemetery" target="_blank">Find a Grave #77332</a></p>
         <ul>
@@ -98,7 +119,7 @@
       </div>
 
       <!-- 3. Wanship Pioneer Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Wanship Pioneer Cemetery</h2>
         <p class="gps">GPS: 40.82200, -111.40594 · <a href="https://www.findagrave.com/cemetery/109325/wanship-pioneer-cemetery" target="_blank">Find a Grave #109325</a></p>
         <ul>
@@ -108,7 +129,7 @@
       </div>
 
       <!-- 4. Kamas Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Kamas Cemetery</h2>
         <p class="gps">GPS: 40.61895, -111.28081 · <a href="https://www.findagrave.com/cemetery/77285/kamas-cemetery" target="_blank">Find a Grave #77285</a></p>
         <ul>
@@ -117,7 +138,7 @@
       </div>
 
       <!-- 5. Scipio Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Scipio Cemetery</h2>
         <p class="gps">GPS: 39.26170, -112.09580 · <a href="https://www.findagrave.com/cemetery/77428/scipio-cemetery" target="_blank">Find a Grave #77428</a></p>
         <ul>
@@ -138,7 +159,7 @@
       </div>
 
       <!-- 6. Scipio Pioneer Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Scipio Pioneer Cemetery</h2>
         <p class="gps">GPS: 39.24120, -112.09930 · <a href="https://www.findagrave.com/cemetery/109270/scipio-pioneer-cemetery" target="_blank">Find a Grave #109270</a></p>
         <ul>
@@ -148,7 +169,7 @@
       </div>
 
       <!-- 7. Mountain View Memorial Estates Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Mountain View Memorial Estates Cemetery</h2>
         <p class="gps">GPS: 40.60942, -111.80395 · <a href="https://www.findagrave.com/cemetery/729904/mountain-view-memorial-estates-cemetery" target="_blank">Find a Grave #729904</a></p>
         <ul>
@@ -158,7 +179,7 @@
       </div>
 
       <!-- 8. Chester Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Chester Cemetery</h2>
         <p class="gps">GPS: 39.48240, -111.54880 · <a href="https://www.findagrave.com/cemetery/77178/chester-cemetery" target="_blank">Find a Grave #77178</a></p>
         <ul>
@@ -168,7 +189,7 @@
       </div>
 
       <!-- 9. Fountain Green Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Fountain Green Cemetery</h2>
         <p class="gps">GPS: 39.63420, -111.63030 · <a href="https://www.findagrave.com/cemetery/77232/fountain-green-cemetery" target="_blank">Find a Grave #77232</a></p>
         <ul>
@@ -178,7 +199,7 @@
       </div>
 
       <!-- 10. Holden Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Holden Cemetery</h2>
         <p class="gps">GPS: 39.09781, -112.26658 · <a href="https://www.findagrave.com/cemetery/77266/holden-cemetery" target="_blank">Find a Grave #77266</a></p>
         <ul>
@@ -188,7 +209,7 @@
       </div>
 
       <!-- 11. Salt Lake City Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Salt Lake City Cemetery</h2>
         <p class="gps">GPS: 40.77720, -111.85800 · <a href="https://www.findagrave.com/cemetery/77424/salt-lake-city-cemetery" target="_blank">Find a Grave #77424</a></p>
         <ul>
@@ -199,11 +220,12 @@
           <li class="ryan"><span class="name">John Ryan</span> <span class="dates">1846–1934</span> <span class="rel">3rd great-grandfather of Cliff (Ryan line)</span> <a class="fg" href="https://www.findagrave.com/memorial/191260387/john-ryan" target="_blank">#191260387</a></li>
           <li><span class="name">Edwin Ruthven Bronson</span> <span class="dates">1817–1889</span> <span class="rel">4th great-grandfather of Cliff (Bronson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/54139/edwin_ruthven-bronson" target="_blank">#54139</a></li>
           <li><span class="name">Mary Clark Bronson</span> <span class="dates">1823–1886</span> <span class="rel">4th great-grandmother of Cliff (Bronson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/54093/mary-bronson" target="_blank">#54093</a></li>
+          <li class="madsen"><span class="name">Ann Killip Cowley</span> <span class="dates">1815–1857</span> <span class="rel">4th great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/35169213/ann-cowley" target="_blank">#35169213</a></li>
         </ul>
       </div>
 
       <!-- 12. Emery City Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Emery City Cemetery</h2>
         <p class="gps">GPS: 38.93110, -111.25470 · <a href="https://www.findagrave.com/cemetery/77213/emery-cemetery" target="_blank">Find a Grave #77213</a></p>
         <ul>
@@ -212,7 +234,7 @@
       </div>
 
       <!-- 13. Mona Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Mona Cemetery</h2>
         <p class="gps">GPS: 39.80750, -111.83890 · <a href="https://www.findagrave.com/cemetery/77340/mona-cemetery" target="_blank">Find a Grave #77340</a></p>
         <ul>
@@ -222,7 +244,7 @@
       </div>
 
       <!-- 14. Duchesne City Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Duchesne City Cemetery</h2>
         <p class="gps">GPS: 40.15530, -110.40876 · <a href="https://www.findagrave.com/cemetery/77202/duchesne-city-cemetery" target="_blank">Find a Grave #77202</a></p>
         <ul>
@@ -231,7 +253,7 @@
       </div>
 
       <!-- 15. Elysian Burial Gardens -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Elysian Burial Gardens</h2>
         <p class="gps">GPS: 40.67145, -111.85825 · <a href="https://www.findagrave.com/cemetery/77212/elysian-burial-gardens" target="_blank">Find a Grave #77212</a></p>
         <ul>
@@ -240,21 +262,177 @@
       </div>
 
       <!-- 16. Redwood Memorial Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Redwood Memorial Cemetery</h2>
         <p class="gps">GPS: 40.66280, -111.50280 · <a href="https://www.findagrave.com/cemetery/77405/redwood-memorial-cemetery" target="_blank">Find a Grave #77405</a> (West Jordan, Salt Lake County, UT)</p>
         <ul>
           <li class="madsen"><span class="name">Magnus Paul Madsen</span> <span class="dates">1889–1975</span> <span class="rel">great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/19857207/magnus_paul-madsen" target="_blank">#19857207</a></li>
           <li class="madsen"><span class="name">Clara Vivian Bench Madsen</span> <span class="dates">1894–1972</span> <span class="rel">great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/19857217/clara_vivian-madsen" target="_blank">#19857217</a></li>
+          <li class="madsen"><span class="name">Ralph Vernon Johnson</span> <span class="dates">1902–1989</span> <span class="rel">great-grandfather of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/129142822/ralph_vernon-johnson" target="_blank">#129142822</a></li>
+          <li class="madsen"><span class="name">Ruth Deama Lawler Johnson</span> <span class="dates">1911–1998</span> <span class="rel">great-grandmother of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/20597440/ruth_deama-johnson" target="_blank">#20597440</a></li>
         </ul>
       </div>
 
       <!-- 17. Provo City Cemetery -->
-      <div class="cemetery">
+      <div class="cemetery" data-state="UT">
         <h2>Provo City Cemetery</h2>
         <p class="gps">GPS: 40.22500, -111.64440 · <a href="https://www.findagrave.com/cemetery/77401/provo-city-cemetery" target="_blank">Find a Grave #77401</a></p>
         <ul>
           <li class="ryan"><span class="name">John Halmagh Van Wagoner</span> <span class="dates">1811–1888</span> <span class="rel">4th great-grandfather of Cliff (Van Wagoner line)</span> <a class="fg" href="https://www.findagrave.com/memorial/12580463/john_halmagh-van_wagoner" target="_blank">#12580463</a></li>
+        </ul>
+      </div>
+
+
+      <!-- 18. Richfield City Cemetery -->
+      <div class="cemetery" data-state="UT">
+        <h2>Richfield City Cemetery</h2>
+        <p class="gps">GPS: 38.77785, -112.08814 · <a href="https://www.findagrave.com/cemetery/77407/richfield-city-cemetery" target="_blank">Find a Grave #77407</a></p>
+        <ul>
+          <li class="madsen"><span class="name">William Michael Cowley</span> <span class="dates">1835–1915</span> <span class="rel">3rd great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/112476/william_michael-cowley" target="_blank">#112476</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.77785,-112.08814" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Sarah Emily Wall Cowley</span> <span class="dates">1840–1908</span> <span class="rel">3rd great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/112444/sarah_emily-cowley" target="_blank">#112444</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.77785,-112.08814" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">William Enos Bench</span> <span class="dates">1859–1902</span> <span class="rel">2nd great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/112509/william_enos-bench" target="_blank">#112509</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.77785,-112.08814" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Emily "Mariah" Cowley Bench</span> <span class="dates">1868–1950</span> <span class="rel">2nd great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/112474/emily-fowler" target="_blank">#112474</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.77785,-112.08814" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 19. East Side Cemetery -->
+      <div class="cemetery" data-state="UT">
+        <h2>East Side Cemetery</h2>
+        <p class="gps">GPS: 38.95798, -111.84516 · <a href="https://www.findagrave.com/cemetery/77422/east-side-cemetery" target="_blank">Find a Grave #77422</a> (Salina, Sevier County, UT)</p>
+        <ul>
+          <li class="madsen"><span class="name">Peter Henry Madsen</span> <span class="dates">1860–1945</span> <span class="rel">2nd great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/36024229/peter_henry-madsen" target="_blank">#36024229</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.95798,-111.84516" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Margaret Amelia Gourley Madsen</span> <span class="dates">1864–1933</span> <span class="rel">2nd great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/36024118/margaret_amelia-madsen" target="_blank">#36024118</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.95798,-111.84516" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 20. Manti Cemetery -->
+      <div class="cemetery" data-state="UT">
+        <h2>Manti Cemetery</h2>
+        <p class="gps">GPS: 39.27488, -111.63481 · <a href="https://www.findagrave.com/cemetery/77320/manti-cemetery" target="_blank">Find a Grave #77320</a></p>
+        <ul>
+          <li class="madsen"><span class="name">William Bench Sr.</span> <span class="dates">1815–1875</span> <span class="rel">3rd great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/14441533/william-bench" target="_blank">#14441533</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.27488,-111.63481" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Ann Longman Bench</span> <span class="dates">1808–1886</span> <span class="rel">3rd great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/14441582/ann-bench" target="_blank">#14441582</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.27488,-111.63481" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 21. Goshen City Cemetery -->
+      <div class="cemetery" data-state="UT">
+        <h2>Goshen City Cemetery</h2>
+        <p class="gps">GPS: 39.94079, -111.90386 · <a href="https://www.findagrave.com/cemetery/77243/goshen-city-cemetery" target="_blank">Find a Grave #77243</a></p>
+        <ul>
+          <li class="madsen"><span class="name">Alexander Gourley</span> <span class="dates">1840–1877</span> <span class="rel">3rd great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/20426860/alexander-gourley" target="_blank">#20426860</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.94079,-111.90386" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Amelia Brady Gourley</span> <span class="dates">1842–1914</span> <span class="rel">3rd great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/20426862/amelia-gourley" target="_blank">#20426862</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.94079,-111.90386" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Paul Gourley</span> <span class="dates">1813–1890</span> <span class="rel">4th great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/15522836/paul-gourley" target="_blank">#15522836</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.94079,-111.90386" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Margaret Glass Gourley</span> <span class="dates">1813–1852</span> <span class="rel">4th great-grandmother of Cliff (Madsen line) · memorial headstone (buried in Scotland)</span> <a class="fg" href="https://www.findagrave.com/memorial/20426866/margaret-gourley" target="_blank">#20426866</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.94079,-111.90386" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Susan Ann Elizabeth Turple Cook</span> <span class="dates">1818–1906</span> <span class="rel">4th great-grandmother of Cliff (Madsen line) · née Turple, m. Charles Brady</span> <a class="fg" href="https://www.findagrave.com/memorial/67986577/susan-ann-elizabeth-turple-cook" target="_blank">#67986577</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.94079,-111.90386" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 22. Logan City Cemetery -->
+      <div class="cemetery" data-state="UT">
+        <h2>Logan City Cemetery</h2>
+        <p class="gps">GPS: 41.74130, -111.81560 · <a href="https://www.findagrave.com/cemetery/77314/logan-city-cemetery" target="_blank">Find a Grave #77314</a></p>
+        <ul>
+          <li class="madsen"><span class="name">Charles Cowley Sr.</span> <span class="dates">1800–1875</span> <span class="rel">4th great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/15942766/charles-cowley" target="_blank">#15942766</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=41.74130,-111.81560" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 23. Glenwood Cemetery -->
+      <div class="cemetery" data-state="UT">
+        <h2>Glenwood Cemetery</h2>
+        <p class="gps">GPS: 38.76560, -111.98900 · <a href="https://www.findagrave.com/cemetery/77241/glenwood-cemetery" target="_blank">Find a Grave #77241</a> (Glenwood, Sevier County, UT)</p>
+        <ul>
+          <li class="madsen"><span class="name">William Wall</span> <span class="dates">1812–1889</span> <span class="rel">4th great-grandfather of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/19535072/william-wall" target="_blank">#19535072</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.76560,-111.98900" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Sarah Sansom Wall</span> <span class="dates">1814–1899</span> <span class="rel">4th great-grandmother of Cliff (Madsen line)</span> <a class="fg" href="https://www.findagrave.com/memorial/19534871/sarah-wall" target="_blank">#19534871</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.76560,-111.98900" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 24. Morris Hill Cemetery -->
+      <div class="cemetery" data-state="ID">
+        <h2>Morris Hill Cemetery</h2>
+        <p class="gps">GPS: 43.60796, -116.23148 · <a href="https://www.findagrave.com/cemetery/80570/morris-hill-cemetery" target="_blank">Find a Grave #80570</a> (Boise, Ada County, ID)</p>
+        <ul>
+          <li class="madsen"><span class="name">Ettie Cline Lawler</span> <span class="dates">1891–1961</span> <span class="rel">3rd great-grandmother of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/59830802/ettie-lawler" target="_blank">#59830802</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=43.60796,-116.23148" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 25. Jackson City Cemetery -->
+      <div class="cemetery" data-state="CA">
+        <h2>Jackson City Cemetery</h2>
+        <p class="gps">GPS: 38.34950, -120.77090 · <a href="https://www.findagrave.com/cemetery/2203378/jackson-city-cemetery" target="_blank">Find a Grave #2203378</a> (Jackson, Amador County, CA)</p>
+        <ul>
+          <li class="madsen"><span class="name">Purl Edwin Lawler</span> <span class="dates">1885–1944</span> <span class="rel">2nd great-grandfather of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/129047226/purl_edwin-lawler" target="_blank">#129047226</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=38.34950,-120.77090" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 26. Washington Street Cemetery -->
+      <div class="cemetery" data-state="IL">
+        <h2>Washington Street Cemetery</h2>
+        <p class="gps">GPS: 39.29860, -87.99270 · <a href="https://www.findagrave.com/cemetery/776956/washington-street-cemetery" target="_blank">Find a Grave #776956</a> (Casey, Clark County, IL)</p>
+        <ul>
+          <li class="madsen"><span class="name">Harry Elmer Johnson</span> <span class="dates">1874–1926</span> <span class="rel">2nd great-grandfather of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/113680002/harry_elmer-johnson" target="_blank">#113680002</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.29860,-87.99270" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Zina Ethel Elliott Johnson</span> <span class="dates">1874–1938</span> <span class="rel">2nd great-grandmother of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/113680409/zina_ethel-johnson" target="_blank">#113680409</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.29860,-87.99270" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Christopher Columbus Elliott</span> <span class="dates">1848–1935</span> <span class="rel">3rd great-grandfather of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/79295170/christopher_columbus-elliott" target="_blank">#79295170</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.29860,-87.99270" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Ann Elizabeth Smith Elliott</span> <span class="dates">1849–1943</span> <span class="rel">3rd great-grandmother of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/79295706/ann_elizabeth-elliott" target="_blank">#79295706</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.29860,-87.99270" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Benjamin Franklin Elliott</span> <span class="dates">1822–1892</span> <span class="rel">4th great-grandfather of Cliff (Elliott line)</span> <a class="fg" href="https://www.findagrave.com/memorial/79291497/benjamin_franklin-elliott" target="_blank">#79291497</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.29860,-87.99270" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 27. Rupp Cemetery -->
+      <div class="cemetery" data-state="IL">
+        <h2>Rupp Cemetery</h2>
+        <p class="gps">GPS: 39.33860, -87.88320 · <a href="https://www.findagrave.com/cemetery/839669/rupp-cemetery" target="_blank">Find a Grave #839669</a> (Martinsville, Clark County, IL)</p>
+        <ul>
+          <li class="madsen"><span class="name">Asa Johnson</span> <span class="dates">1841–1891</span> <span class="rel">3rd great-grandfather of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/26420937/asa-johnson" target="_blank">#26420937</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.33860,-87.88320" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Mary Anna "Nina" Cooper Johnson</span> <span class="dates">1852–1932</span> <span class="rel">3rd great-grandmother of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/64780801/mary_anna-johnson" target="_blank">#64780801</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.33860,-87.88320" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Richard Johnson</span> <span class="dates">1801–1878</span> <span class="rel">4th great-grandfather of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/64780818/richard-johnson" target="_blank">#64780818</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.33860,-87.88320" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Sarah Fogle Johnson</span> <span class="dates">1810–1891</span> <span class="rel">4th great-grandmother of Cliff (Johnson line)</span> <a class="fg" href="https://www.findagrave.com/memorial/64780823/sarah-johnson" target="_blank">#64780823</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.33860,-87.88320" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 28. New Home Cemetery -->
+      <div class="cemetery" data-state="MO">
+        <h2>New Home Cemetery</h2>
+        <p class="gps">GPS: 37.24200, -92.61400 · <a href="https://www.findagrave.com/cemetery/1992347/new-home-cemetery" target="_blank">Find a Grave #1992347</a> (Wright County, MO)</p>
+        <ul>
+          <li class="madsen"><span class="name">Thomas Martin Lawler</span> <span class="dates">1849–1934</span> <span class="rel">3rd great-grandfather of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/142124080/thomas_martin-lawler" target="_blank">#142124080</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=37.24200,-92.61400" target="_blank">🗺️</a></li>
+          <li class="madsen"><span class="name">Emily Jane Craven Lawler</span> <span class="dates">1848–1913</span> <span class="rel">3rd great-grandmother of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/136107543/emily_jane-lawler" target="_blank">#136107543</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=37.24200,-92.61400" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 29. Kincheloe Cemetery -->
+      <div class="cemetery" data-state="MO">
+        <h2>Kincheloe Cemetery</h2>
+        <p class="gps">GPS: 37.23800, -92.62000 · <a href="https://www.findagrave.com/cemetery/2202232/kincheloe-cemetery" target="_blank">Find a Grave #2202232</a> (Wright County, MO)</p>
+        <ul>
+          <li class="madsen"><span class="name">William Jacob Cline</span> <span class="dates">1850–1930</span> <span class="rel">3rd great-grandfather of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/22997264/william_j-cline" target="_blank">#22997264</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=37.23800,-92.62000" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 30. Manes Cemetery -->
+      <div class="cemetery" data-state="MO">
+        <h2>Manes Cemetery</h2>
+        <p class="gps">GPS: 37.36900, -92.44000 · <a href="https://www.findagrave.com/cemetery/2172900/manes-cemetery" target="_blank">Find a Grave #2172900</a> (Manes, Wright County, MO)</p>
+        <ul>
+          <li class="madsen"><span class="name">Hannah Jane Cannon Cline</span> <span class="dates">1854–1919</span> <span class="rel">3rd great-grandmother of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/116570530/hannah_jane-cline" target="_blank">#116570530</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=37.36900,-92.44000" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 31. Mount Olivet Cemetery -->
+      <div class="cemetery" data-state="MO">
+        <h2>Mount Olivet Cemetery</h2>
+        <p class="gps">GPS: 39.36600, -94.35100 · <a href="https://www.findagrave.com/cemetery/30348/mount-olivet-cemetery" target="_blank">Find a Grave #30348</a> (Kearney, Clay County, MO)</p>
+        <ul>
+          <li class="madsen"><span class="name">James Madison Craven</span> <span class="dates">1824–1872</span> <span class="rel">4th great-grandfather of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/94137441/james_madison-craven" target="_blank">#94137441</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.36600,-94.35100" target="_blank">🗺️</a></li>
+        </ul>
+      </div>
+
+      <!-- 32. Salem Christian Union Church Cemetery -->
+      <div class="cemetery" data-state="MO">
+        <h2>Salem Christian Union Church Cemetery</h2>
+        <p class="gps">GPS: 39.34800, -94.23900 · <a href="https://www.findagrave.com/cemetery/1914075/salem-christian-union-church-cemetery" target="_blank">Find a Grave #1914075</a> (Excelsior Springs, Clay County, MO)</p>
+        <ul>
+          <li class="madsen"><span class="name">Sarah Ann Craven</span> <span class="dates">1825–1906</span> <span class="rel">4th great-grandmother of Cliff (Lawler line)</span> <a class="fg" href="https://www.findagrave.com/memorial/17447952/sarah_ann-craven" target="_blank">#17447952</a> <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=39.34800,-94.23900" target="_blank">🗺️</a></li>
         </ul>
       </div>
 
@@ -266,5 +444,31 @@
       <p>© 2026 The Bates Family · <a href="genealogy.html">batesfam.net</a></p>
     </div>
   </footer>
+
+  <script>
+  (function(){
+    var chips = Array.prototype.slice.call(document.querySelectorAll('.state-bar span[data-state]'));
+    var resetBtn = document.querySelector('.state-bar .state-reset');
+    var cemeteries = Array.prototype.slice.call(document.querySelectorAll('.cemetery'));
+    var active = null;
+    function apply(){
+      cemeteries.forEach(function(c){
+        var show = active ? (c.dataset.state === active) : true;
+        c.classList.toggle('is-hidden', !show);
+      });
+      chips.forEach(function(ch){ ch.classList.toggle('active', ch.dataset.state === active); });
+      if(resetBtn) resetBtn.classList.toggle('has-active', !!active);
+    }
+    chips.forEach(function(ch){
+      ch.addEventListener('click', function(){
+        active = (active === ch.dataset.state) ? null : ch.dataset.state;
+        apply();
+      });
+    });
+    if(resetBtn){
+      resetBtn.addEventListener('click', function(){ active = null; apply(); });
+    }
+  })();
+  </script>
 </body>
 </html>
